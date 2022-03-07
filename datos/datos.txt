@@ -1,0 +1,13 @@
+Exportar en local
+mongoexport --collection=datosArticulos --db="Nombre de la colección" --out="Nombre archivo"
+mongoexport --collection=datosClientes --db="Nombre de la colección" --out="Nombre archivo"
+mongoexport --collection=datosVendedores --db="Nombre de la colección" --out="Nombre archivo"
+mongoexport --collection=datosVentas --db="Nombre de la colección" --out="Nombre archivo"
+mongoexport --collection=ventas --db="Nombre de la colección" --out="Nombre archivo"
+
+Importar en MongoDB Atlas
+mongoimport --uri mongodb+srv://usuario2:<contraseña>@cluster0.9erz2.mongodb.net/SergioProyectoFinal2 --collection datosArticulos --type json --file 
+mongoimport --uri mongodb+srv://usuario2:<contraseña>@cluster0.9erz2.mongodb.net/SergioProyectoFinal2 --collection datosClientes --type json --file 
+mongoimport --uri mongodb+srv://usuario2:<contraseña>@cluster0.9erz2.mongodb.net/SergioProyectoFinal2 --collection datosVendedores --type json --file 
+mongoimport --uri mongodb+srv://usuario2:<contraseña>@cluster0.9erz2.mongodb.net/SergioProyectoFinal2 --collection datosVentas --type json --file 
+mongoimport --uri mongodb+srv://usuario2:<contraseña>@cluster0.9erz2.mongodb.net/SergioProyectoFinal2 --collection ventas --type json --file 
